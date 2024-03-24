@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  border-bottom: 1px solid #668ccf;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  left: 0;
+  right: 0;
+  max-height: 5rem;
+  background-color: #fff;
+}
+
+.header .nav-btn {
+  padding: 0 0.5rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.header .nav-btn.selected {
+  color: #668ccf;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  padding-top: 5rem;
+}
+
+.homepage .searchbar {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  gap: 1rem;
+  border-right: 1px solid #668ccf;
+  overflow-y: auto;
+  flex-basis: 20%;
+  flex-shrink: 0;
+}
+
+.homepage .searchbar select,
+.homepage .searchbar input,
+.homepage .searchbar label {
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.homepage button {
+  background-color: #668ccf;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.product-display {
+  padding: 1rem;
+}
+
+.homepage .searchbar-title {
+  align-self: center;
+  font-weight: 600;
+  font-size: large;
+}
+
+.homepage .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 80%;
+}
+
+.homepage .product-list .card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 200px;
+  margin: 1rem;
+}
+
+.pagination {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #e0e0e0;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination li.active button {
+  background-color: #668ccf;
+  color: #fff;
+}
+
+.order-listing {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 1rem;
+}
+
+.order-listing table {
+  width: 100%;
+}
+
+.order-listing th,
+.order-listing td {
+  text-align: left;
+  padding: 8px;
+}
+
+.order-listing tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.order-listing th {
+  background-color: #668ccf;
+  color: white;
+}
